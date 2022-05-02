@@ -1,0 +1,25 @@
+---
+config_dir: ./config/
+attacks:
+  - moeva
+  - pgd
+seeds:
+  - 42
+projects:
+  - rq2.lcld.static
+eps_list:
+  - 0.2
+budgets:
+  - 100
+  - 1000
+loss_evaluations:
+  - constraints+flip+adaptive_eps_step+repair
+scenari:
+   - project_name: lcld_augmented
+     paths:
+       features: ./data/lcld/features_augmented.csv
+       constraints: ./data/lcld/constraints_augmented.csv
+     reconstruction: False
+     evaluation:
+       project_name: lcld_augmented
+       constraints: ./data/lcld/constraints_augmented.csv

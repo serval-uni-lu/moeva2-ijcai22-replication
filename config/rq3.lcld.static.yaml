@@ -1,0 +1,19 @@
+---
+project_name: lcld
+paths:
+  features: ./data/lcld/features.csv
+  constraints: ./data/lcld/constraints.csv
+  x_candidates: ./data/lcld/x_candidates_common.npy
+  min_max_scaler: ./models/lcld/scaler.joblib
+  ml_scaler: ./models/lcld/scaler.joblib
+dirs:
+  results: ./out/attacks/lcld/rq3/
+misclassification_threshold: 0.25
+norm: 2
+n_initial_state: 4000
+initial_state_offset: 0
+system:
+  n_jobs: -1
+  verbose: 1
+save_history: "full"
+reconstruction: False

@@ -1,0 +1,19 @@
+---
+project_name: botnet
+paths:
+  features: ./data/botnet/features.csv
+  constraints: ./data/botnet/constraints.csv
+  x_candidates: ./data/botnet/x_candidates_common.npy.bk
+  min_max_scaler: ./models/botnet/scaler.joblib
+  ml_scaler: ./models/botnet/scaler.joblib
+dirs:
+  results: ./out/attacks/botnet/rq3/
+misclassification_threshold: 0.5
+norm: 2
+n_initial_state: -1
+initial_state_offset: 0
+system:
+  n_jobs: -1
+  verbose: 1
+save_history: "reduced"
+reconstruction: False

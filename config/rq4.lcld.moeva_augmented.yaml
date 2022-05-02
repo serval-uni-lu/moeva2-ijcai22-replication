@@ -1,0 +1,29 @@
+attack_name: moeva
+budget: 100
+dirs:
+  results: ./out/attacks/lcld/rq4/
+eps_list:
+- 0.2
+evaluation:
+  constraints: ./data/lcld/constraints_augmented.csv
+  project_name: lcld_augmented
+initial_state_offset: 0
+misclassification_threshold: 0.25
+n_initial_state: 4000
+n_offsprings: 100
+n_pop: 200
+norm: 2
+paths:
+  constraints: ./data/lcld/constraints_augmented.csv
+  features: ./data/lcld/features_augmented.csv
+  min_max_scaler: ./models/lcld/scaler_augmented.joblib
+  ml_scaler: ./models/lcld/scaler_augmented.joblib
+  model: ./models/lcld/nn_augmented_moeva_best.model
+  x_candidates: ./data/lcld/x_candidates_rq4_augmented_best.npy
+project_name: lcld_augmented
+reconstruction: false
+save_history: full
+seed: 42
+system:
+  n_jobs: -1
+  verbose: 1

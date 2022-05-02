@@ -1,0 +1,21 @@
+---
+config_dir: ./config/
+attacks:
+  - moeva
+seeds:
+  - 42
+projects:
+  - rq2.botnet.static
+eps_list:
+  - 4
+budgets:
+  - 1000
+scenari:
+  - project_name: botnet_augmented
+    paths:
+      features: ./data/botnet/features_augmented_19.csv
+      constraints: ./data/botnet/constraints_augmented_19.csv
+    reconstruction: False
+    evaluation:
+      project_name: botnet_augmented
+      constraints: ./data/botnet/constraints_augmented_19.csv

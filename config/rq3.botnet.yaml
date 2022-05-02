@@ -1,0 +1,14 @@
+---
+config_dir: ./config/
+models:
+  - ./models/botnet/nn_moeva.model
+attacks:
+  - moeva
+seeds:
+  - 42
+projects:
+  - rq3.botnet.static
+eps_list:
+  - 4
+budgets:
+  - 1000

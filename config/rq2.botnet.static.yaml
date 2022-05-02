@@ -1,0 +1,16 @@
+---
+paths:
+  model: ./models/botnet/nn_augmented_19.model
+  x_candidates: ./data/botnet/x_candidates_common_augmented.npy
+  min_max_scaler: ./models/botnet/scaler_augmented_19.joblib
+  ml_scaler: ./models/botnet/scaler_augmented_19.joblib
+dirs:
+  results: ./out/attacks/botnet/rq2/
+misclassification_threshold: 0.5
+norm: 2
+n_initial_state: -1
+initial_state_offset: 0
+system:
+  n_jobs: -1
+  verbose: 1
+save_history: "reduced"

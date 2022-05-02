@@ -1,0 +1,24 @@
+---
+config_dir: ./config/
+attacks:
+  - pgd
+seeds:
+  - 42
+projects:
+  - sm1.botnet.static
+eps_list:
+  - 0.5
+  - 1
+  - 2
+  - 4
+  - 8
+budgets:
+  - 500
+  - 1000
+  - 2000
+loss_evaluations:
+  - flip
+  - flip+sat
+  - constraints+flip
+  - constraints+flip+adaptive_eps_step
+  - constraints+flip+adaptive_eps_step+repair

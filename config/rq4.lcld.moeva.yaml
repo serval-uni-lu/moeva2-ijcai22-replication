@@ -1,0 +1,29 @@
+attack_name: moeva
+budget: 100
+dirs:
+  results: ./out/attacks/lcld/rq4/
+eps_list:
+- 0.2
+evaluation:
+  constraints: ./data/lcld/constraints.csv
+  project_name: lcld
+initial_state_offset: 0
+misclassification_threshold: 0.25
+n_initial_state: 4000
+n_offsprings: 100
+n_pop: 200
+norm: 2
+paths:
+  constraints: ./data/lcld/constraints.csv
+  features: ./data/lcld/features.csv
+  min_max_scaler: ./models/lcld/scaler.joblib
+  ml_scaler: ./models/lcld/scaler.joblib
+  model: ./models/lcld/nn_moeva_full.model
+  x_candidates: ./data/lcld/x_candidates_rq4.npy
+project_name: lcld
+reconstruction: false
+save_history: full
+seed: 42
+system:
+  n_jobs: -1
+  verbose: 1
