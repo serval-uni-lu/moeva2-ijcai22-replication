@@ -1,5 +1,13 @@
 # MoEvA2 Replication package
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2112.01156-b31b1b.svg)](https://arxiv.org/abs/2112.01156)
+
+**Important notice**: 
+The goal of this package is the replication of the experiments of our paper [A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space](https://arxiv.org/abs/2112.01156). 
+This repository will not be updated. 
+The latest version of our framework is available at [https://github.com/serval-uni-lu/constrained-attacks](https://github.com/serval-uni-lu/constrained-attacks).
+
 ## Introduction
 
 This package contains all the necessary data and scripts to replicate the experiments of our research paper "A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space".
@@ -52,4 +60,14 @@ python -m src.experiments.botnet.01_train_robust -c ./config/rq0.botnet.yaml
 
 ## Citation 
 
-If you have used our framework for research purposes, you can cite our publication by: TBD.
+If you have used our framework for research purposes, you can cite our publication by:  
+
+BibTex:
+```
+@article{simonetto2021unified,
+  title={A unified framework for adversarial attack and defense in constrained feature space},
+  author={Simonetto, Thibault and Dyrmishi, Salijona and Ghamizi, Salah and Cordy, Maxime and Traon, Yves Le},
+  journal={arXiv preprint arXiv:2112.01156},
+  year={2021}
+}
+```
